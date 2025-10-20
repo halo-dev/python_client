@@ -1,0 +1,10 @@
+library: urllib3
+projectName: halo_client
+packageName: halo_client
+packageUrl: https://github.com/halo-dev/python_client
+author: Halo
+authorEmail: hi@halo.run
+infoName: Halo
+infoEmail: hi@halo.run
+gitUserId: halo-dev
+gitRepoId: python_client
