@@ -6,6 +6,7 @@ A value object for {@link MenuItem MenuItem}.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**children** | [**List[MenuItemVo]**](MenuItemVo.md) |  | [optional] 
 **display_name** | **str** | Gets menu item&#39;s display name. | [optional] 
 **metadata** | [**Metadata**](Metadata.md) |  | 
 **parent_name** | **str** |  | [optional] 

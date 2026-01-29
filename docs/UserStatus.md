@@ -5,8 +5,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**last_login_at** | **datetime** |  | [optional] 
-**login_histories** | [**List[LoginHistory]**](LoginHistory.md) |  | [optional] 
 **permalink** | **str** |  | [optional] 
 
 ## Example

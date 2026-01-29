@@ -6,9 +6,8 @@ Post navigation vo to hold previous and next item.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**current** | [**PostVo**](PostVo.md) |  | [optional] 
-**next** | [**PostVo**](PostVo.md) |  | [optional] 
-**previous** | [**PostVo**](PostVo.md) |  | [optional] 
+**next** | [**ListedPostVo**](ListedPostVo.md) |  | [optional] 
+**previous** | [**ListedPostVo**](ListedPostVo.md) |  | [optional] 
 
 ## Example
 

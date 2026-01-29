@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**external_transfer_attachment**](AttachmentV1alpha1ConsoleApi.md#external_transfer_attachment) | **POST** /apis/api.console.halo.run/v1alpha1/attachments/-/upload-from-url | 
 [**search_attachments**](AttachmentV1alpha1ConsoleApi.md#search_attachments) | **GET** /apis/api.console.halo.run/v1alpha1/attachments | 
 [**upload_attachment**](AttachmentV1alpha1ConsoleApi.md#upload_attachment) | **POST** /apis/api.console.halo.run/v1alpha1/attachments/upload | 
+[**upload_attachment_for_console**](AttachmentV1alpha1ConsoleApi.md#upload_attachment_for_console) | **POST** /apis/console.api.storage.halo.run/v1alpha1/attachments/-/upload | 
 
 
 # **external_transfer_attachment**
@@ -246,6 +247,92 @@ Name | Type | Description  | Notes
  **file** | **bytearray**|  | 
  **policy_name** | **str**| Storage policy name | 
  **group_name** | **str**| The name of the group to which the attachment belongs | [optional] 
+
+### Return type
+
+[**Attachment**](Attachment.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: */*
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**0** | default response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **upload_attachment_for_console**
+> Attachment upload_attachment_for_console(file=file, filename=filename, url=url)
+
+Upload attachment endpoint for console.
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer (JWT) Authentication (bearerAuth):
+
+```python
+import halo_client
+from halo_client.models.attachment import Attachment
+from halo_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:8091
+# See configuration.py for a list of all supported configuration parameters.
+configuration = halo_client.Configuration(
+    host = "http://localhost:8091"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = halo_client.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure Bearer authorization (JWT): bearerAuth
+configuration = halo_client.Configuration(
+    access_token = os.environ["BEARER_TOKEN"]
+)
+
+# Enter a context with an instance of the API client
+with halo_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = halo_client.AttachmentV1alpha1ConsoleApi(api_client)
+    file = None # bytearray | The file to upload. If not provided, the url will be used. (optional)
+    filename = 'filename_example' # str | The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. (optional)
+    url = 'url_example' # str | The url to upload from. If not provided, the file will be used. (optional)
+
+    try:
+        api_response = api_instance.upload_attachment_for_console(file=file, filename=filename, url=url)
+        print("The response of AttachmentV1alpha1ConsoleApi->upload_attachment_for_console:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling AttachmentV1alpha1ConsoleApi->upload_attachment_for_console: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **bytearray**| The file to upload. If not provided, the url will be used. | [optional] 
+ **filename** | **str**| The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. | [optional] 
+ **url** | **str**| The url to upload from. If not provided, the file will be used. | [optional] 
 
 ### Return type
 

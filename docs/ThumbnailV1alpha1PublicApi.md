@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_thumbnail_by_uri**
-> bytearray get_thumbnail_by_uri(uri, size)
+> bytearray get_thumbnail_by_uri(uri, size, width=width)
 
 Get thumbnail by URI
 
@@ -49,10 +49,11 @@ with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.ThumbnailV1alpha1PublicApi(api_client)
     uri = 'uri_example' # str | The URI of the image
-    size = 'size_example' # str | The size of the thumbnail,available values are s,m,l,xl
+    size = 'size_example' # str | The size of the thumbnail
+    width = 56 # int | The width of the thumbnail, if 'size' is not provided, this parameter will be used to determine the size (optional)
 
     try:
-        api_response = api_instance.get_thumbnail_by_uri(uri, size)
+        api_response = api_instance.get_thumbnail_by_uri(uri, size, width=width)
         print("The response of ThumbnailV1alpha1PublicApi->get_thumbnail_by_uri:\n")
         pprint(api_response)
     except Exception as e:
@@ -67,7 +68,8 @@ with halo_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uri** | **str**| The URI of the image | 
- **size** | **str**| The size of the thumbnail,available values are s,m,l,xl | 
+ **size** | **str**| The size of the thumbnail | 
+ **width** | **int**| The width of the thumbnail, if &#39;size&#39; is not provided, this parameter will be used to determine the size | [optional] 
 
 ### Return type
 

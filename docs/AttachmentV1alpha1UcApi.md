@@ -7,13 +7,13 @@ Method | HTTP request | Description
 [**create_attachment_for_post**](AttachmentV1alpha1UcApi.md#create_attachment_for_post) | **POST** /apis/uc.api.storage.halo.run/v1alpha1/attachments | 
 [**external_transfer_attachment1**](AttachmentV1alpha1UcApi.md#external_transfer_attachment1) | **POST** /apis/uc.api.storage.halo.run/v1alpha1/attachments/-/upload-from-url | 
 [**list_my_attachments**](AttachmentV1alpha1UcApi.md#list_my_attachments) | **GET** /apis/uc.api.storage.halo.run/v1alpha1/attachments | 
-[**upload_uc_attachment**](AttachmentV1alpha1UcApi.md#upload_uc_attachment) | **POST** /apis/uc.api.storage.halo.run/v1alpha1/attachments/-/upload | 
+[**upload_attachment_for_uc**](AttachmentV1alpha1UcApi.md#upload_attachment_for_uc) | **POST** /apis/uc.api.storage.halo.run/v1alpha1/attachments/-/upload | 
 
 
 # **create_attachment_for_post**
 > Attachment create_attachment_for_post(file, wait_for_permalink=wait_for_permalink, post_name=post_name, single_page_name=single_page_name)
 
-Create attachment for the given post.
+Create attachment for the given post. Deprecated in favor of /attachments/-/upload.
 
 ### Example
 
@@ -102,6 +102,7 @@ Name | Type | Description  | Notes
 > Attachment external_transfer_attachment1(uc_upload_from_url_request, wait_for_permalink=wait_for_permalink)
 
 Upload attachment from the given URL.
+Deprecated in favor of /attachments/-/upload.
 
 ### Example
 
@@ -279,8 +280,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **upload_uc_attachment**
-> Attachment upload_uc_attachment(file, form_data=form_data)
+# **upload_attachment_for_uc**
+> Attachment upload_attachment_for_uc(file=file, filename=filename, url=url)
 
 Upload attachment to user center storage.
 
@@ -292,7 +293,6 @@ Upload attachment to user center storage.
 ```python
 import halo_client
 from halo_client.models.attachment import Attachment
-from halo_client.models.uc_upload_request_form_data import UcUploadRequestFormData
 from halo_client.rest import ApiException
 from pprint import pprint
 
@@ -322,15 +322,16 @@ configuration = halo_client.Configuration(
 with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.AttachmentV1alpha1UcApi(api_client)
-    file = None # bytearray | 
-    form_data = halo_client.UcUploadRequestFormData() # UcUploadRequestFormData |  (optional)
+    file = None # bytearray | The file to upload. If not provided, the url will be used. (optional)
+    filename = 'filename_example' # str | The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. (optional)
+    url = 'url_example' # str | The url to upload from. If not provided, the file will be used. (optional)
 
     try:
-        api_response = api_instance.upload_uc_attachment(file, form_data=form_data)
-        print("The response of AttachmentV1alpha1UcApi->upload_uc_attachment:\n")
+        api_response = api_instance.upload_attachment_for_uc(file=file, filename=filename, url=url)
+        print("The response of AttachmentV1alpha1UcApi->upload_attachment_for_uc:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling AttachmentV1alpha1UcApi->upload_uc_attachment: %s\n" % e)
+        print("Exception when calling AttachmentV1alpha1UcApi->upload_attachment_for_uc: %s\n" % e)
 ```
 
 
@@ -340,8 +341,9 @@ with halo_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **bytearray**|  | 
- **form_data** | [**UcUploadRequestFormData**](UcUploadRequestFormData.md)|  | [optional] 
+ **file** | **bytearray**| The file to upload. If not provided, the url will be used. | [optional] 
+ **filename** | **str**| The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. | [optional] 
+ **url** | **str**| The url to upload from. If not provided, the file will be used. | [optional] 
 
 ### Return type
 

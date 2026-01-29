@@ -1,6 +1,7 @@
 # flake8: noqa
 
 # import apis into api package
+from halo_client.api.annotation_setting_v1_alpha_uc_api import AnnotationSettingV1AlphaUcApi
 from halo_client.api.annotation_setting_v1alpha1_api import AnnotationSettingV1alpha1Api
 from halo_client.api.attachment_v1alpha1_api import AttachmentV1alpha1Api
 from halo_client.api.attachment_v1alpha1_console_api import AttachmentV1alpha1ConsoleApi
@@ -79,5 +80,4 @@ from halo_client.api.user_connection_v1alpha1_uc_api import UserConnectionV1alph
 from halo_client.api.user_preference_v1alpha1_uc_api import UserPreferenceV1alpha1UcApi
 from halo_client.api.user_v1alpha1_api import UserV1alpha1Api
 from halo_client.api.user_v1alpha1_console_api import UserV1alpha1ConsoleApi
-from halo_client.api.default_api import DefaultApi
 

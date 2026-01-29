@@ -6,7 +6,7 @@ Post and content data for creating and updating post.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**content** | [**ContentUpdateParam**](ContentUpdateParam.md) |  | [optional] 
+**content** | [**ContentUpdateParam**](ContentUpdateParam.md) |  | 
 **post** | [**Post**](Post.md) |  | 
 
 ## Example

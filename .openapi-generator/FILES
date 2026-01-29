@@ -7,6 +7,7 @@ docs/AddOperation.md
 docs/AnnotationSetting.md
 docs/AnnotationSettingList.md
 docs/AnnotationSettingSpec.md
+docs/AnnotationSettingV1AlphaUcApi.md
 docs/AnnotationSettingV1alpha1Api.md
 docs/Attachment.md
 docs/AttachmentList.md
@@ -72,7 +73,6 @@ docs/CounterV1alpha1Api.md
 docs/CreateUserRequest.md
 docs/CustomTemplates.md
 docs/DashboardStats.md
-docs/DefaultApi.md
 docs/DetailedUser.md
 docs/Device.md
 docs/DeviceList.md
@@ -130,7 +130,6 @@ docs/LocalThumbnailList.md
 docs/LocalThumbnailSpec.md
 docs/LocalThumbnailStatus.md
 docs/LocalThumbnailV1alpha1Api.md
-docs/LoginHistory.md
 docs/MarkSpecifiedRequest.md
 docs/Menu.md
 docs/MenuItem.md
@@ -259,6 +258,7 @@ docs/SettingList.md
 docs/SettingRef.md
 docs/SettingSpec.md
 docs/SettingV1alpha1Api.md
+docs/SetupRequest.md
 docs/SinglePage.md
 docs/SinglePageList.md
 docs/SinglePageRequest.md
@@ -313,7 +313,6 @@ docs/TotpRequest.md
 docs/TwoFactorAuthSettings.md
 docs/TwoFactorAuthV1alpha1UcApi.md
 docs/UcUploadFromUrlRequest.md
-docs/UcUploadRequestFormData.md
 docs/UpgradeFromUriRequest.md
 docs/UploadFromUrlRequest.md
 docs/User.md
@@ -336,6 +335,7 @@ docs/VoteRequest.md
 git_push.sh
 halo_client/__init__.py
 halo_client/api/__init__.py
+halo_client/api/annotation_setting_v1_alpha_uc_api.py
 halo_client/api/annotation_setting_v1alpha1_api.py
 halo_client/api/attachment_v1alpha1_api.py
 halo_client/api/attachment_v1alpha1_console_api.py
@@ -350,7 +350,6 @@ halo_client/api/comment_v1alpha1_console_api.py
 halo_client/api/comment_v1alpha1_public_api.py
 halo_client/api/config_map_v1alpha1_api.py
 halo_client/api/counter_v1alpha1_api.py
-halo_client/api/default_api.py
 halo_client/api/device_v1alpha1_api.py
 halo_client/api/device_v1alpha1_uc_api.py
 halo_client/api/extension_definition_v1alpha1_api.py
@@ -524,7 +523,6 @@ halo_client/models/local_thumbnail.py
 halo_client/models/local_thumbnail_list.py
 halo_client/models/local_thumbnail_spec.py
 halo_client/models/local_thumbnail_status.py
-halo_client/models/login_history.py
 halo_client/models/mark_specified_request.py
 halo_client/models/menu.py
 halo_client/models/menu_item.py
@@ -619,6 +617,7 @@ halo_client/models/setting_form.py
 halo_client/models/setting_list.py
 halo_client/models/setting_ref.py
 halo_client/models/setting_spec.py
+halo_client/models/setup_request.py
 halo_client/models/single_page.py
 halo_client/models/single_page_list.py
 halo_client/models/single_page_request.py
@@ -656,7 +655,6 @@ halo_client/models/totp_auth_link_response.py
 halo_client/models/totp_request.py
 halo_client/models/two_factor_auth_settings.py
 halo_client/models/uc_upload_from_url_request.py
-halo_client/models/uc_upload_request_form_data.py
 halo_client/models/upgrade_from_uri_request.py
 halo_client/models/upload_from_url_request.py
 halo_client/models/user.py

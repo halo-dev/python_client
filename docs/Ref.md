@@ -6,8 +6,8 @@ Extension reference object. The name is mandatory
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**group** | **str** | Extension group | [optional] 
-**kind** | **str** | Extension kind | [optional] 
+**group** | **str** | Extension group | 
+**kind** | **str** | Extension kind | 
 **name** | **str** | Extension name. This field is mandatory | 
 **version** | **str** | Extension version | [optional] 
 
