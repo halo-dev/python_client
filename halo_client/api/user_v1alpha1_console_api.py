@@ -3555,7 +3555,7 @@ class UserV1alpha1ConsoleApi:
         :param name: User name (required)
         :type name: str
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -3625,7 +3625,7 @@ class UserV1alpha1ConsoleApi:
         :param name: User name (required)
         :type name: str
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -3695,7 +3695,7 @@ class UserV1alpha1ConsoleApi:
         :param name: User name (required)
         :type name: str
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of

@@ -66,7 +66,7 @@ class AttachmentV1alpha1UcApi:
         Create attachment for the given post. Deprecated in favor of /attachments/-/upload.
 
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param wait_for_permalink: Wait for permalink.
         :type wait_for_permalink: bool
         :param post_name: Post name.
@@ -145,7 +145,7 @@ class AttachmentV1alpha1UcApi:
         Create attachment for the given post. Deprecated in favor of /attachments/-/upload.
 
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param wait_for_permalink: Wait for permalink.
         :type wait_for_permalink: bool
         :param post_name: Post name.
@@ -224,7 +224,7 @@ class AttachmentV1alpha1UcApi:
         Create attachment for the given post. Deprecated in favor of /attachments/-/upload.
 
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param wait_for_permalink: Wait for permalink.
         :type wait_for_permalink: bool
         :param post_name: Post name.
@@ -1063,7 +1063,7 @@ class AttachmentV1alpha1UcApi:
         Upload attachment to user center storage.
 
         :param file: The file to upload. If not provided, the url will be used.
-        :type file: bytearray
+        :type file: bytes
         :param filename: The filename to use when uploading from url. If not provided, the filename will be  extracted from the url.
         :type filename: str
         :param url: The url to upload from. If not provided, the file will be used.
@@ -1137,7 +1137,7 @@ class AttachmentV1alpha1UcApi:
         Upload attachment to user center storage.
 
         :param file: The file to upload. If not provided, the url will be used.
-        :type file: bytearray
+        :type file: bytes
         :param filename: The filename to use when uploading from url. If not provided, the filename will be  extracted from the url.
         :type filename: str
         :param url: The url to upload from. If not provided, the file will be used.
@@ -1211,7 +1211,7 @@ class AttachmentV1alpha1UcApi:
         Upload attachment to user center storage.
 
         :param file: The file to upload. If not provided, the url will be used.
-        :type file: bytearray
+        :type file: bytes
         :param filename: The filename to use when uploading from url. If not provided, the filename will be  extracted from the url.
         :type filename: str
         :param url: The url to upload from. If not provided, the file will be used.

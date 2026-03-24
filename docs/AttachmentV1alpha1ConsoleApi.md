@@ -225,7 +225,7 @@ configuration = halo_client.Configuration(
 with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.AttachmentV1alpha1ConsoleApi(api_client)
-    file = None # bytearray | 
+    file = None # bytes | 
     policy_name = 'policy_name_example' # str | Storage policy name
     group_name = 'group_name_example' # str | The name of the group to which the attachment belongs (optional)
 
@@ -244,7 +244,7 @@ with halo_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **bytearray**|  | 
+ **file** | **bytes**|  | 
  **policy_name** | **str**| Storage policy name | 
  **group_name** | **str**| The name of the group to which the attachment belongs | [optional] 
 
@@ -311,7 +311,7 @@ configuration = halo_client.Configuration(
 with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.AttachmentV1alpha1ConsoleApi(api_client)
-    file = None # bytearray | The file to upload. If not provided, the url will be used. (optional)
+    file = None # bytes | The file to upload. If not provided, the url will be used. (optional)
     filename = 'filename_example' # str | The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. (optional)
     url = 'url_example' # str | The url to upload from. If not provided, the file will be used. (optional)
 
@@ -330,7 +330,7 @@ with halo_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **bytearray**| The file to upload. If not provided, the url will be used. | [optional] 
+ **file** | **bytes**| The file to upload. If not provided, the url will be used. | [optional] 
  **filename** | **str**| The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. | [optional] 
  **url** | **str**| The url to upload from. If not provided, the file will be used. | [optional] 
 

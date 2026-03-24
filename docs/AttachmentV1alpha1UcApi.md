@@ -52,7 +52,7 @@ configuration = halo_client.Configuration(
 with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.AttachmentV1alpha1UcApi(api_client)
-    file = None # bytearray | 
+    file = None # bytes | 
     wait_for_permalink = True # bool | Wait for permalink. (optional)
     post_name = 'post_name_example' # str | Post name. (optional)
     single_page_name = 'single_page_name_example' # str | Single page name. (optional)
@@ -72,7 +72,7 @@ with halo_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **bytearray**|  | 
+ **file** | **bytes**|  | 
  **wait_for_permalink** | **bool**| Wait for permalink. | [optional] 
  **post_name** | **str**| Post name. | [optional] 
  **single_page_name** | **str**| Single page name. | [optional] 
@@ -322,7 +322,7 @@ configuration = halo_client.Configuration(
 with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.AttachmentV1alpha1UcApi(api_client)
-    file = None # bytearray | The file to upload. If not provided, the url will be used. (optional)
+    file = None # bytes | The file to upload. If not provided, the url will be used. (optional)
     filename = 'filename_example' # str | The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. (optional)
     url = 'url_example' # str | The url to upload from. If not provided, the file will be used. (optional)
 
@@ -341,7 +341,7 @@ with halo_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **bytearray**| The file to upload. If not provided, the url will be used. | [optional] 
+ **file** | **bytes**| The file to upload. If not provided, the url will be used. | [optional] 
  **filename** | **str**| The filename to use when uploading from url. If not provided, the filename will be  extracted from the url. | [optional] 
  **url** | **str**| The url to upload from. If not provided, the file will be used. | [optional] 
 

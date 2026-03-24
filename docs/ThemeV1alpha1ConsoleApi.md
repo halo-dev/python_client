@@ -959,7 +959,7 @@ with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.ThemeV1alpha1ConsoleApi(api_client)
     name = 'name_example' # str | 
-    file = None # bytearray | 
+    file = None # bytes | 
 
     try:
         api_instance.upgrade_theme(name, file)
@@ -975,7 +975,7 @@ with halo_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **str**|  | 
- **file** | **bytearray**|  | 
+ **file** | **bytes**|  | 
 
 ### Return type
 

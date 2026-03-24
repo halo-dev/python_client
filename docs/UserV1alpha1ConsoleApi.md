@@ -1144,7 +1144,7 @@ with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.UserV1alpha1ConsoleApi(api_client)
     name = 'name_example' # str | User name
-    file = None # bytearray | 
+    file = None # bytes | 
 
     try:
         api_response = api_instance.upload_user_avatar(name, file)
@@ -1162,7 +1162,7 @@ with halo_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **str**| User name | 
- **file** | **bytearray**|  | 
+ **file** | **bytes**|  | 
 
 ### Return type
 

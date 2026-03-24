@@ -576,7 +576,7 @@ class MigrationV1alpha1ConsoleApi:
         :param download_url: Remote backup HTTP URL.
         :type download_url: str
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param filename: Filename of backup file in backups root.
         :type filename: str
         :param _request_timeout: timeout setting for this request. If one
@@ -654,7 +654,7 @@ class MigrationV1alpha1ConsoleApi:
         :param download_url: Remote backup HTTP URL.
         :type download_url: str
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param filename: Filename of backup file in backups root.
         :type filename: str
         :param _request_timeout: timeout setting for this request. If one
@@ -732,7 +732,7 @@ class MigrationV1alpha1ConsoleApi:
         :param download_url: Remote backup HTTP URL.
         :type download_url: str
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param filename: Filename of backup file in backups root.
         :type filename: str
         :param _request_timeout: timeout setting for this request. If one

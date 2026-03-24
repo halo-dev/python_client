@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_thumbnail_by_uri**
-> bytearray get_thumbnail_by_uri(uri, size, width=width)
+> bytes get_thumbnail_by_uri(uri, size, width=width)
 
 Get thumbnail by URI
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**bytearray**
+**bytes**
 
 ### Authorization
 

@@ -204,7 +204,7 @@ with halo_client.ApiClient(configuration) as api_client:
     api_instance = halo_client.MigrationV1alpha1ConsoleApi(api_client)
     backup_name = 'backup_name_example' # str | Backup metadata name. (optional)
     download_url = 'download_url_example' # str | Remote backup HTTP URL. (optional)
-    file = None # bytearray |  (optional)
+    file = None # bytes |  (optional)
     filename = 'filename_example' # str | Filename of backup file in backups root. (optional)
 
     try:
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup_name** | **str**| Backup metadata name. | [optional] 
  **download_url** | **str**| Remote backup HTTP URL. | [optional] 
- **file** | **bytearray**|  | [optional] 
+ **file** | **bytes**|  | [optional] 
  **filename** | **str**| Filename of backup file in backups root. | [optional] 
 
 ### Return type

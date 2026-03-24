@@ -463,7 +463,7 @@ configuration = halo_client.Configuration(
 with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.PluginV1alpha1ConsoleApi(api_client)
-    file = None # bytearray |  (optional)
+    file = None # bytes |  (optional)
     preset_name = 'preset_name_example' # str | Plugin preset name. We will find the plugin from plugin presets (optional)
     source = 'source_example' # str | Install source. Default is file. (optional)
 
@@ -482,7 +482,7 @@ with halo_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **bytearray**|  | [optional] 
+ **file** | **bytes**|  | [optional] 
  **preset_name** | **str**| Plugin preset name. We will find the plugin from plugin presets | [optional] 
  **source** | **str**| Install source. Default is file. | [optional] 
 
@@ -971,7 +971,7 @@ with halo_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = halo_client.PluginV1alpha1ConsoleApi(api_client)
     name = 'name_example' # str | 
-    file = None # bytearray |  (optional)
+    file = None # bytes |  (optional)
     preset_name = 'preset_name_example' # str | Plugin preset name. We will find the plugin from plugin presets (optional)
     source = 'source_example' # str | Install source. Default is file. (optional)
 
@@ -989,7 +989,7 @@ with halo_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **str**|  | 
- **file** | **bytearray**|  | [optional] 
+ **file** | **bytes**|  | [optional] 
  **preset_name** | **str**| Plugin preset name. We will find the plugin from plugin presets | [optional] 
  **source** | **str**| Install source. Default is file. | [optional] 
 

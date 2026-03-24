@@ -714,7 +714,7 @@ class AttachmentV1alpha1ConsoleApi:
 
 
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param policy_name: Storage policy name (required)
         :type policy_name: str
         :param group_name: The name of the group to which the attachment belongs
@@ -787,7 +787,7 @@ class AttachmentV1alpha1ConsoleApi:
 
 
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param policy_name: Storage policy name (required)
         :type policy_name: str
         :param group_name: The name of the group to which the attachment belongs
@@ -860,7 +860,7 @@ class AttachmentV1alpha1ConsoleApi:
 
 
         :param file: (required)
-        :type file: bytearray
+        :type file: bytes
         :param policy_name: Storage policy name (required)
         :type policy_name: str
         :param group_name: The name of the group to which the attachment belongs
@@ -1014,7 +1014,7 @@ class AttachmentV1alpha1ConsoleApi:
         Upload attachment endpoint for console.
 
         :param file: The file to upload. If not provided, the url will be used.
-        :type file: bytearray
+        :type file: bytes
         :param filename: The filename to use when uploading from url. If not provided, the filename will be  extracted from the url.
         :type filename: str
         :param url: The url to upload from. If not provided, the file will be used.
@@ -1088,7 +1088,7 @@ class AttachmentV1alpha1ConsoleApi:
         Upload attachment endpoint for console.
 
         :param file: The file to upload. If not provided, the url will be used.
-        :type file: bytearray
+        :type file: bytes
         :param filename: The filename to use when uploading from url. If not provided, the filename will be  extracted from the url.
         :type filename: str
         :param url: The url to upload from. If not provided, the file will be used.
@@ -1162,7 +1162,7 @@ class AttachmentV1alpha1ConsoleApi:
         Upload attachment endpoint for console.
 
         :param file: The file to upload. If not provided, the url will be used.
-        :type file: bytearray
+        :type file: bytes
         :param filename: The filename to use when uploading from url. If not provided, the filename will be  extracted from the url.
         :type filename: str
         :param url: The url to upload from. If not provided, the file will be used.

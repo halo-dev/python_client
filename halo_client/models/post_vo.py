@@ -30,6 +30,7 @@ from halo_client.models.stats_vo import StatsVo
 from halo_client.models.tag_vo import TagVo
 from typing import Optional, Set
 from typing_extensions import Self
+from pydantic_core import to_jsonable_python
 
 class PostVo(BaseModel):
     """
@@ -47,7 +48,8 @@ class PostVo(BaseModel):
     __properties: ClassVar[List[str]] = ["categories", "content", "contributors", "metadata", "owner", "spec", "stats", "status", "tags"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )
@@ -59,8 +61,7 @@ class PostVo(BaseModel):
 
     def to_json(self) -> str:
         """Returns the JSON representation of the model using alias"""
-        # TODO: pydantic v2: use .model_dump_json(by_alias=True, exclude_unset=True) instead
-        return json.dumps(self.to_dict())
+        return json.dumps(to_jsonable_python(self.to_dict()))
 
     @classmethod
     def from_json(cls, json_str: str) -> Optional[Self]:

@@ -1362,7 +1362,7 @@ class PluginV1alpha1ConsoleApi:
         Install a plugin by uploading a Jar file.
 
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param preset_name: Plugin preset name. We will find the plugin from plugin presets
         :type preset_name: str
         :param source: Install source. Default is file.
@@ -1436,7 +1436,7 @@ class PluginV1alpha1ConsoleApi:
         Install a plugin by uploading a Jar file.
 
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param preset_name: Plugin preset name. We will find the plugin from plugin presets
         :type preset_name: str
         :param source: Install source. Default is file.
@@ -1510,7 +1510,7 @@ class PluginV1alpha1ConsoleApi:
         Install a plugin by uploading a Jar file.
 
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param preset_name: Plugin preset name. We will find the plugin from plugin presets
         :type preset_name: str
         :param source: Install source. Default is file.
@@ -3106,7 +3106,7 @@ class PluginV1alpha1ConsoleApi:
         :param name: (required)
         :type name: str
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param preset_name: Plugin preset name. We will find the plugin from plugin presets
         :type preset_name: str
         :param source: Install source. Default is file.
@@ -3184,7 +3184,7 @@ class PluginV1alpha1ConsoleApi:
         :param name: (required)
         :type name: str
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param preset_name: Plugin preset name. We will find the plugin from plugin presets
         :type preset_name: str
         :param source: Install source. Default is file.
@@ -3262,7 +3262,7 @@ class PluginV1alpha1ConsoleApi:
         :param name: (required)
         :type name: str
         :param file:
-        :type file: bytearray
+        :type file: bytes
         :param preset_name: Plugin preset name. We will find the plugin from plugin presets
         :type preset_name: str
         :param source: Install source. Default is file.
