@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **color** | **str** | Color regex explanation.  &lt;pre&gt;  ^                 # start of the line  #                 # start with a number sign &#x60;#&#x60;  (                 # start of (group 1)    [a-fA-F0-9]{6}  # support z-f, A-F and 0-9, with a length of 6    |               # or    [a-fA-F0-9]{3}  # support z-f, A-F and 0-9, with a length of 3  )                 # end of (group 1)  $                 # end of the line  &lt;/pre&gt; | [optional] 
 **cover** | **str** |  | [optional] 
+**description** | **str** |  | [optional] 
 **display_name** | **str** |  | 
 **slug** | **str** |  | 
 
